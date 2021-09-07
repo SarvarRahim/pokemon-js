@@ -1,19 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Countries</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-</body>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+  <div class="bg-danger d-flex align-items-center justify-content-between px-3">
+    <a class="text-decoration-none" href="#">
+      <h1 class="text-white py-2 h2">Pokedex</h1>
+    </a>
+    <a class="text-white" href="#">About</a>
+  </div>
+  <div class="container">
+    <div class="pokemon row">
+      <!-- <div class="pockemons col-4 my-4">
+        <div class="card shadow-lg">
+          <div class="pokemon">
+            <img class="pokemon__img" src="" alt="" width="380" height="180">
+            <h3 class="pokemon__name text-center mb-0">Bulbasirr</h3>
+            <span class="pokemon__number">#001</span>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
 
+  <template id="pokemon-item-templete">
+    <div class="pockemons col-12 col-sm-6 col-lg-3 my-4">
+      <div class="card shadow-sm">
+        <div class="">
+          <img class="pokemon__img w-100 bg-light" src="" alt="" width="253" height="180">
+          <h3 class="pokemon__name text-center mb-0 h4 py-2"></h3>
+          <span class="text-center d-block mx-auto mb-2">#<span class="pokemon__number"></span></span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
